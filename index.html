@@ -1,11 +1,47 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Payooo App</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payooo App / login</title>
+
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
+
+    <!-- DaisyUi  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+
+  <body class="w-4/12 h-screen mx-auto p-5 bg-gray-50">
+   
+   <div class="my-10">
+
+    <div class="flex justify-center items-center my-10">
+      <img  src="assets/Logo-full.png" alt="payoo Logo">
+    </div>
+
+  
+    <div class="card bg-base-100 w-11/12 mx-auto  shrink-0 mt-20">
+      <div class="card-body">
+        <fieldset class="fieldset">
+          <label class="label font-bold">Mobile Number</label>
+          <input id="mobileNumber" type="number" class="input w-full rounded-full" placeholder="Enter your number" />
+        
+          <label class="label  font-bold">Pin Number</label>
+          <input id="pinNumber" type="password" class="input w-full rounded-full" placeholder="Enter 4 digit pin" />
+          <br>
+          <button id="btnLogin" class="btn btn-primary mt-4 rounded-full">Login</button>
+        </fieldset>
+      </div>
+    </div>
+
+   </div>
     
-</body>
+
+    <script src="Script/login.js"></script>
+  </body>
 </html>
